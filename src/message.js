@@ -45,11 +45,11 @@ async function repondreAuto(message) {
 
     try {
         if (texteRecu === 'badges disponibles') {
-            // Récupérer les badges disponibles
+            // Récupération des badges disponibles
             const badges = await fetchBadges();
 
             if (badges.length > 0) {
-                // Envoyer les informations de chaque badge séparément
+                // Envoi des informations de chaque badge séparément
                 for (const item of badges) {
                     let badgeMessage = `*Nom du badge:* ${item.badge.name}\n`;
                     badgeMessage += `*Lieu:* ${item.badge.location}\n`;
