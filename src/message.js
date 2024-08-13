@@ -6,12 +6,6 @@ function envoyerMessage(client, contact, message) {
     return client.sendMessage(contact, message);
 }
 
-// Fonction pour envoyer un message avec des boutons
-function envoyerMessageAvecBoutons(client, contact, message, buttons) {
-    const buttonMessage = new Buttons(message, buttons, 'Choisissez une option', 'Sélectionnez une option ci-dessous');
-    return client.sendMessage(contact, buttonMessage);
-}
-
 // Fonction pour récupérer les badges disponibles depuis l'API de MOUGNI
 async function fetchBadges() {
     try {
@@ -50,14 +44,7 @@ async function repondreAuto(message) {
     }
 
     try {
-        if (texteRecu === 'offres spéciales') {
-            const buttons = [
-                { body: 'Acheter' },
-                { body: 'En savoir plus' },
-                { body: 'Retour' }
-            ];
-            await envoyerMessageAvecBoutons(message.getContact(), message.from, reponse, buttons);
-        } else if (texteRecu === 'badges disponibles') {
+        if (texteRecu === 'badges disponibles') {
             // Récupérer les badges disponibles
             const badges = await fetchBadges();
 
