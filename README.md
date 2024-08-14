@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet est un bot WhatsApp conçu pour promouvoir des événements en envoyant des informations sur des badges personnalisés. Le bot permet aux utilisateurs de consulter les badges disponibles, incluant des détails spécifiques et des images associées aux événements. Il utilise la bibliothèque `whatsapp-web.js` pour l'interaction avec l'API WhatsApp et `axios` pour récupérer les données des badges depuis l'API de MOUGNI.
+Ce projet est un bot WhatsApp conçu pour promouvoir des événements en envoyant des informations sur des badges personnalisés. Le bot permet aux utilisateurs de consulter les badges disponibles, incluant des détails spécifiques et des images associées aux événements. Il utilise la bibliothèque `whatsapp-web.js` pour l'interaction avec l'API WhatsApp et `axios` pour récupérer des données depuis des API.
 
 ## Fonctionnalités
 
